@@ -69,6 +69,8 @@ self.addEventListener("activate", event => {
 // If there's a cached version available, use it, but fetch an update for next time.
 // Gets data on screen as quickly as possible, then updates once the network has returned the latest data. 
 self.addEventListener("fetch", event => {
+	return fetch(event.request);
+
 	event.respondWith(
 		caches.open(cacheName).then(cache => {
 			return cache.match(event.request).then(response => {
