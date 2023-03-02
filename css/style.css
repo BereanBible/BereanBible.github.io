@@ -1,0 +1,72 @@
+:root {
+    --defaultBackground: #353535;
+    --navBackground: #353535;
+    --bibleBackground: #000000;
+    --marginBackground: #000000;
+    --defaultTextColor: #FFFFFF;
+    --defaultFont: 'Roboto', sans-serif;
+    --navHeight: 50px;
+}
+
+body {
+    background-color: var(--defaultBackground);
+    color: var(--defaultTextColor);
+    font-family: var(--defaultFont);    
+}
+
+
+
+/*NAVIGATION BAR*/
+
+#navBar { /*On mobile center sould roll down, */
+    width: auto;
+    height: var(--navHeight);
+    background-color: var(--navBackground);
+
+    /* CSS Grid Structure */
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: var(--navHeight) auto var(--navHeight);/*Mobile*/
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "nLft nMid nRgh";
+}
+
+#navLeft { grid-area: nLft; }
+#navMiddle { grid-area: nMid; }
+#navRight { grid-area: nRgh; }
+
+
+
+/*MAIN CONTAINER*/
+
+#main {
+    width: auto;/*Or should be 3x auto?*/
+    height: auto;
+
+    /* CSS Grid Structure */
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;/*Each column nneds to eb the window width if iPhone*/
+    grid-auto-rows: auto;
+    grid-template-areas:
+        "mrg bib itl";
+}
+
+#bibleContainer { 
+    grid-area: bib; 
+    background-color: var(--bibleBackground);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#marginContainer { 
+    grid-area: mrg; 
+    background-color: var(--marginBackground);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
