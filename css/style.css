@@ -13,6 +13,8 @@ html {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: pink;
 }
 
@@ -25,8 +27,8 @@ body {
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    /*DEBUG*/overflow-y: hidden;
-    /*DEBUG*/overflow-x: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
     /*DEBUG*/border: solid 1px yellow;   
 }
 
@@ -59,7 +61,7 @@ body {
 #main {
     width: 300vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: auto;
 
     /* CSS Grid Structure */
