@@ -40,7 +40,7 @@ body {
     width: 100vw;
     height: var(--navHeight);
     background-color: var(--navBackground);
-    /*DEBUG*/color: lightsalmon;
+    /*DEBUG*/color: yellow;
 
     /* CSS Grid Structure */
     display: grid;
@@ -91,29 +91,7 @@ body {
     grid-template-areas:
         "mrg bib itl";
     */
-    /*DEBUG*/border: solid 0px white;
-}
-
-#scrollContainer {
-    width: 300vw;
-    height: calc(100vh - var(--navHeight));
-    overflow-y: auto;
-    overflow-x: scroll;
-
-    display: flex;
-    flex-direction: row;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-
-    /*OLD
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: 100vw 100vw 100vw;
-    grid-auto-rows: auto;
-    grid-template-areas:
-        "mrg bib itl";
-    */
-    /*DEBUG*/border: solid 0px white;
+    /*DEBUG*/border: dashed 1px white;
 }
 
 #bibleContainer { 
@@ -125,7 +103,6 @@ body {
     padding: 10px;
     overflow-y: auto;
 
-    scroll-snap-align: start;
     /*DEBUG*/border: solid 1px grey;
 }
 
@@ -136,7 +113,6 @@ body {
     padding: 10px;
     overflow-y: auto;
 
-    scroll-snap-align: start;
     /*DEBUG*/border: solid 1px grey;
 }
 
@@ -147,7 +123,6 @@ body {
     padding: 10px;
     overflow-y: auto;
 
-    scroll-snap-align: start;
     /*DEBUG*/border: solid 1px grey;
 }
 
@@ -174,4 +149,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.carousel_item{
+    flex-shrink: 0;
+    scroll-snap-align: start;
 }
