@@ -16,6 +16,7 @@ html {
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: pink;
+    box-sizing: border-box;
 }
 
 body {
@@ -40,7 +41,7 @@ body {
     width: 100vw;
     height: var(--navHeight);
     background-color: var(--navBackground);
-    /*DEBUG*/color: yellow;
+    /*DEBUG*/color: white;
 
     /* CSS Grid Structure */
     display: grid;
@@ -91,7 +92,7 @@ body {
     grid-template-areas:
         "mrg bib itl";
     */
-    /*DEBUG*/border: dashed 1px white;
+    /*DEBUG*/border: dashed 0px white;
 }
 
 #bibleContainer { 
