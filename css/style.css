@@ -26,7 +26,7 @@ body {
     margin: 0px;
     padding: 0px;
     /*DEBUG*/overflow-y: hidden;
-    /*DEBUG*/overflow-x: hidden;
+    /*DEBUG*/overflow-x: auto;
     /*DEBUG*/border: solid 1px yellow;   
 }
 
@@ -59,8 +59,8 @@ body {
 #main {
     width: 300vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
-    overflow-x: auto;
     overflow-y: hidden;
+    overflow-x: auto;
 
     /* CSS Grid Structure */
     display: grid;
