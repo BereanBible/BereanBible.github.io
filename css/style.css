@@ -54,15 +54,15 @@ body {
 
 #navLeft { 
     grid-area: nLft;
-    /*DEBUG*/border: solid 1px grey;
+    /*DEBUG*/border: solid 0px grey;
 }
 #navMiddle {
     grid-area: nMid;
-    /*DEBUG*/border: solid 1px grey;
+    /*DEBUG*/border: solid 0px grey;
 }
 #navRight {
     grid-area: nRgh;
-    /*DEBUG*/border: solid 1px grey;
+    /*DEBUG*/border: solid 0px grey;
 }
 
 #navPassageText { 
@@ -96,32 +96,29 @@ body {
 }
 
 #bibleContainer { 
-    /*OLD grid-area: bib;*/
     width: 100vw;
     background-color: var(--bibleBackground);
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 20px;
     overflow-y: auto;
 
     /*DEBUG*/border: solid 1px grey;
 }
 
 #marginContainer { 
-    /*OLD grid-area: mrg;*/
     width: 100vw; 
     background-color: var(--marginBackground);
-    padding: 10px;
+    padding: 20px;
     overflow-y: auto;
 
     /*DEBUG*/border: solid 1px grey;
 }
 
 #interlinearContainer { 
-    /*OLD grid-area: mrg;*/
     width: 100vw; 
     background-color: var(--defaultBackground);
-    padding: 10px;
+    padding: 20px;
     overflow-y: auto;
 
     /*DEBUG*/border: solid 1px grey;
@@ -155,4 +152,5 @@ body {
 .carousel_item{
     flex-shrink: 0;
     scroll-snap-align: start;
+    box-sizing: border-box;
 }
