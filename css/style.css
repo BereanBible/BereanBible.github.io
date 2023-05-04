@@ -8,10 +8,21 @@
     --navHeight: 50px;
 }
 
+html {
+    height: 100%/*calc(100vh - var(--navHeight))*/;
+    width: auto;
+    /*DEBUG*/border: solid 2px blue;
+    background-color: pink;
+}
+
 body {
     background-color: var(--defaultBackground);
     color: var(--defaultTextColor);
-    font-family: var(--defaultFont);    
+    font-family: var(--defaultFont); 
+    
+    height: auto/*calc(100vh - var(--navHeight))*/;
+    /*DEBUG*/overflow: hidden;
+    /*DEBUG*/border: solid 2px green;   
 }
 
 
@@ -42,7 +53,8 @@ body {
 
 #main {
     width: auto;/*Or should be 3x auto?*/
-    height: auto;
+    height: calc(100vh - var(--navHeight));
+    overflow: hidden;
 
     /* CSS Grid Structure */
     display: grid;
@@ -51,19 +63,40 @@ body {
     grid-auto-rows: auto;
     grid-template-areas:
         "mrg bib itl";
+    /*DEBUG*/border: solid 2px white;
 }
 
 #bibleContainer { 
-    grid-area: bib; 
+    grid-area: bib;
     background-color: var(--bibleBackground);
     display: flex;
     flex-wrap: wrap;
+    padding: 5px;
+    overflow-y: auto;
+    /*DEBUG*/border: solid 2px brown;
 }
 
 #marginContainer { 
     grid-area: mrg; 
     background-color: var(--marginBackground);
+    padding: 5px;
+    overflow-y: auto;
+    /*DEBUG*/border: solid 2px lightskyblue;
 }
+
+#bibleContent {
+    margin: 0px;
+    padding: 0px;
+    /*DEBUG*/border: solid 2px tan;
+}
+
+#marginContent {
+    margin: 0px;
+    padding: 0px;
+    /*DEBUG*/border: solid 2px tan;
+}
+
+
 
 .center {
     display: flex;
