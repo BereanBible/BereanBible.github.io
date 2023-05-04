@@ -29,7 +29,7 @@ body {
     padding: 0px;
     overflow-y: hidden;
     overflow-x: hidden;
-    /*DEBUG*/border: solid 1px yellow;   
+    /*DEBUG*/border: solid 1px rgb(0, 255, 64);   
 }
 
 
