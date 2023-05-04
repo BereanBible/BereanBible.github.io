@@ -26,8 +26,8 @@ body {
     margin: 0px;
     padding: 0px;
     /*DEBUG*/overflow-y: hidden;
-    /*DEBUG*/overflow-x: auto;
-    /*DEBUG*/border: solid 1px green;   
+    /*DEBUG*/overflow-x: hidden;
+    /*DEBUG*/border: solid 1px yellow;   
 }
 
 
@@ -59,12 +59,13 @@ body {
 #main {
     width: 300vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 
     /* CSS Grid Structure */
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: var(--viewWidth) var(--viewWidth) var(--viewWidth);/*Each column needs to be the window width if iPhone*/
+    grid-template-columns: 100vw 100vw 100vw;/*Each column needs to be the window width if iPhone*/
     grid-auto-rows: auto;
     grid-template-areas:
         "mrg bib itl";
