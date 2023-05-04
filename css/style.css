@@ -5,7 +5,7 @@
     --marginBackground: #000000;
     --defaultTextColor: #FFFFFF;
     --defaultFont: 'Roboto', sans-serif;
-    --navHeight: 50px;
+    --navHeight: 30px;
 }
 
 html {
@@ -52,15 +52,15 @@ body {
 
 #navLeft { 
     grid-area: nLft;
-    /*DEBUG*/border: solid 1px blue;
+    /*DEBUG*/border: solid 1px grey;
 }
 #navMiddle {
     grid-area: nMid;
-    /*DEBUG*/border: solid 1px blue;
+    /*DEBUG*/border: solid 1px grey;
 }
 #navRight {
     grid-area: nRgh;
-    /*DEBUG*/border: solid 1px blue;
+    /*DEBUG*/border: solid 1px grey;
 }
 
 #navPassageText { 
@@ -92,17 +92,17 @@ body {
     background-color: var(--bibleBackground);
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
     overflow-y: auto;
-    /*DEBUG*/border: solid 0px brown;
+    /*DEBUG*/border: solid 1px grey;
 }
 
 #marginContainer { 
     grid-area: mrg; 
     background-color: var(--marginBackground);
-    padding: 5px;
+    padding: 10px;
     overflow-y: auto;
-    /*DEBUG*/border: solid 0px lightskyblue;
+    /*DEBUG*/border: solid 1px grey;
 }
 
 #bibleContent {
