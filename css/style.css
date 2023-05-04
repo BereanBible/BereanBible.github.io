@@ -75,33 +75,56 @@ body {
     width: 100vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
     overflow-y: auto;
-    overflow-x: auto;
+    overflow-x: scroll;
 
-    /* CSS Grid Structure */
+    display: flex;
+    flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    /*OLD
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 100vw 100vw 100vw;/*Each column needs to be the window width if iPhone*/
+    grid-template-columns: 100vw 100vw 100vw;
     grid-auto-rows: auto;
     grid-template-areas:
         "mrg bib itl";
+    */
     /*DEBUG*/border: solid 0px white;
 }
 
 #bibleContainer { 
-    grid-area: bib;
+    /*OLD grid-area: bib;*/
+    width: 100vw;
     background-color: var(--bibleBackground);
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     overflow-y: auto;
+
+    scroll-snap-align: start;
     /*DEBUG*/border: solid 1px grey;
 }
 
 #marginContainer { 
-    grid-area: mrg; 
+    /*OLD grid-area: mrg;*/
+    width: 100vw; 
     background-color: var(--marginBackground);
     padding: 10px;
     overflow-y: auto;
+
+    scroll-snap-align: start;
+    /*DEBUG*/border: solid 1px grey;
+}
+
+#interlinearContainer { 
+    /*OLD grid-area: mrg;*/
+    width: 100vw; 
+    background-color: var(--defaultBackground);
+    padding: 10px;
+    overflow-y: auto;
+
+    scroll-snap-align: start;
     /*DEBUG*/border: solid 1px grey;
 }
 
@@ -117,6 +140,11 @@ body {
     /*DEBUG*/border: solid 0px tan;
 }
 
+#interlinearContent {
+    margin: 0px;
+    padding: 0px;
+    /*DEBUG*/border: solid 0px tan;
+}
 
 
 .center {
