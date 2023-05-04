@@ -13,7 +13,6 @@ html {
     width: auto;
     margin: 0px;
     padding: 0px;
-    /*DEBUG*/border: solid 2px blue;
     background-color: pink;
 }
 
@@ -26,7 +25,7 @@ body {
     margin: 0px;
     padding: 0px;
     /*DEBUG*/overflow: hidden;
-    /*DEBUG*/border: solid 2px green;   
+    /*DEBUG*/border: solid 1px green;   
 }
 
 
