@@ -59,7 +59,7 @@ body {
 /*MAIN CONTAINER*/
 
 #main {
-    width: 300vw;/*Or should be 3x auto?*/
+    width: 100vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
     overflow-y: auto;
     overflow-x: auto;
