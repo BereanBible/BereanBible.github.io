@@ -11,6 +11,8 @@
 html {
     height: 100%/*calc(100vh - var(--navHeight))*/;
     width: auto;
+    margin: 0px;
+    padding: 0px;
     /*DEBUG*/border: solid 2px blue;
     background-color: pink;
 }
@@ -18,9 +20,11 @@ html {
 body {
     background-color: var(--defaultBackground);
     color: var(--defaultTextColor);
-    font-family: var(--defaultFont); 
+    font-family: var(--defaultFont);
     
     height: auto/*calc(100vh - var(--navHeight))*/;
+    margin: 0px;
+    padding: 0px;
     /*DEBUG*/overflow: hidden;
     /*DEBUG*/border: solid 2px green;   
 }
@@ -59,7 +63,7 @@ body {
     /* CSS Grid Structure */
     display: grid;
     grid-gap: 0px;
-    grid-template-columns: 0.33fr 0.33fr 0.33fr;/*Each column nneds to eb the window width if iPhone*/
+    grid-template-columns: 1fr 1fr 1fr;/*Each column nneds to eb the window width if iPhone*/
     grid-auto-rows: auto;
     grid-template-areas:
         "mrg bib itl";
