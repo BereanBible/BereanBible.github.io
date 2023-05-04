@@ -28,7 +28,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: auto;
     /*DEBUG*/border: solid 0px rgb(255, 0, 170);   
 }
 
@@ -72,7 +72,7 @@ body {
 /*MAIN CONTAINER*/
 
 #main {
-    width: 100vw;/*Or should be 3x auto?*/
+    width: 300vw;/*Or should be 3x auto?*/
     height: calc(100vh - var(--navHeight));
     overflow-y: auto;
     overflow-x: scroll;
