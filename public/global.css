@@ -69,6 +69,24 @@ body {
     font-size: auto;
 }
 
+/*
+
+$(window).scroll(function() {
+   var hT = $('#divName').offset().top,
+       hH = $('#divName').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+        //if the divName div is on the screen this code will execute.
+    }
+});
+
+
+
+
+*/
+
+
 
 
 /*MAIN CONTAINER*/
