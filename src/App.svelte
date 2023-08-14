@@ -1,10 +1,28 @@
 <script>
 	export let name;
+
+	let nav_backgroundColor = "#353535";
+	let bible_backgroundColor = "#000000";
+	let margin_backgroundColor = "#000000";
+	let defaultTextColor = "#ffffff";
+	let defaultFont = "'Roboto', sans-serif";
+	let navHeight = "30px";
 </script>
 
 <!--HTML-->
 
-<div id="Le_Body">
+<div
+	id="Le_Body"
+	style="
+		--defaultBackground: #353535;
+		--navBackground: {nav_backgroundColor};
+		--bibleBackground: {bible_backgroundColor};
+		--marginBackground: {margin_backgroundColor};
+		--defaultTextColor: {defaultTextColor};
+		--defaultFont: {defaultFont};
+		--navHeight: {navHeight};
+	"
+>
 	<div id="navBar">
 		<div id="navLeft" class="center">
 			<!--???-->
@@ -269,16 +287,6 @@
 <!--CSS-->
 
 <style>
-	:root {
-		--defaultBackground: #353535;
-		--navBackground: #353535;
-		--bibleBackground: #000000;
-		--marginBackground: #000000;
-		--defaultTextColor: #ffffff;
-		--defaultFont: "Roboto", sans-serif;
-		--navHeight: 30px;
-	}
-
 	/*
     html {
         height: 100%;
