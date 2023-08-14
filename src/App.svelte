@@ -7,6 +7,8 @@
 	let defaultTextColor = "#ffffff";
 	let defaultFont = "'Roboto', sans-serif";
 	let navHeight = "30px";
+
+	let interlinearOn = false;
 </script>
 
 <!--HTML-->
@@ -275,12 +277,14 @@
 			</div>
 		</div>
 
-		<div id="interlinearContainer" class="carousel_item">
-			<!--needs to be a live edited and saved text box of the current open margin file-->
-			<div id="interlinearContent">
-				<p>Pie</p>
+		{#if interlinearOn}
+			<div id="interlinearContainer" class="carousel_item">
+				<!--needs to be a live edited and saved text box of the current open margin file-->
+				<div id="interlinearContent">
+					<p>Pie</p>
+				</div>
 			</div>
-		</div>
+		{/if}
 	</div>
 </div>
 
