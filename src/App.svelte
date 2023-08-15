@@ -31,7 +31,6 @@
 			defaultTextColor="{defaultTextColor},"
 			defaultFont="{defaultFont},"
 			{navHeight}
-			style="z-index: 4;"
 		/>
 
 		<div id="main_pg">

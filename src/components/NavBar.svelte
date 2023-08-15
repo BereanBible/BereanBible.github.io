@@ -4,7 +4,13 @@ The navbar component.
 -->
 <script>
     export let navBackground, defaultTextColor, defaultFont, navHeight;
-    console.log("[[[", navBackground, defaultTextColor, defaultFont, navHeight);
+    console.log(
+        "NavBar props:",
+        navBackground,
+        defaultTextColor,
+        defaultFont,
+        navHeight
+    );
 </script>
 
 <!--HTML-->
