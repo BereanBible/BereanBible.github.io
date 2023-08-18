@@ -1,5 +1,8 @@
 <script>
+	import "../public/global.css";
+	import "./App.css";
 	import NavBar from "./components/NavBar.svelte";
+	// import * from "../public/images/icons/icon-32x32.png"
 
 	let nav_backgroundColor = "#353535";
 	let bible_backgroundColor = "#000000";
@@ -33,8 +36,12 @@
 			{navHeight}
 		/>
 
-		<div id="main_pg">
-			<div id="marginContainer" class="carousel_item">
+		<button class="btn-sm btn-ghost" style="border: 3px solid yellow;"
+			>Hello daisyUI</button
+		>
+
+		<div id="main_pg" class="">
+			<div id="marginContainer" class="">
 				<!--needs to be a live edited and saved text box of the current open margin file-->
 				<div id="marginContent">
 					<p>
@@ -196,7 +203,7 @@
 				</div>
 			</div>
 
-			<div id="bibleContainer" class="carousel_item">
+			<div id="bibleContainer" class="">
 				<!--???-->
 				<div id="bibleContent">
 					<p>
@@ -295,7 +302,7 @@
 			</div>
 
 			{#if interlinearOn}
-				<div id="interlinearContainer" class="carousel_item">
+				<div id="interlinearContainer" class="">
 					<!--needs to be a live edited and saved text box of the current open margin file-->
 					<div id="interlinearContent">
 						<p>Pie</p>
@@ -430,11 +437,11 @@
 		border: solid 0px tan;
 	}
 
-	.center {
+	/* .center {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
+	} */
 
 	.carousel_item {
 		flex-shrink: 0;
