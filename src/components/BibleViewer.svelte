@@ -3,8 +3,34 @@
 The Bible component.
 -->
 <script>
+    import { onMount } from "svelte";
+    // import NASB95 from "../data/bibles/NASB95.json";
+
     export let bibleBackground, defaultTextColor, defaultFont;
-    console.log("Bible props:", bibleBackground, defaultTextColor, defaultFont);
+
+    export let book;
+    export let chapter;
+
+    console.log(
+        "Bible props:",
+        bibleBackground,
+        defaultTextColor,
+        defaultFont,
+        book,
+        chapter
+    );
+
+    // let data = NASB95[0][0][0][1];
+    // console.log("data=", data);
+
+    var jaxon = require("jaxon");
+
+    jaxon
+        .factory()
+        .on("parse", "__text", function (err, data) {
+            console.log("Text=", data);
+        })
+        .parse("../data/bibles/NASB95.json");
 </script>
 
 <!--HTML-->

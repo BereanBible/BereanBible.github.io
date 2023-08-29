@@ -11,6 +11,9 @@
 	let defaultFont = "'Roboto', sans-serif";
 	let navHeight = "30px";
 
+	let bible_book = "Genesis";
+	let bible_chapter = 1;
+
 	let interlinearOn = false;
 </script>
 
@@ -40,27 +43,29 @@
 			<div id="marginContainer" class="carousel_item">
 				<!--needs to be a live edited and saved text box of the current open margin file-->
 				<MarginEditor
-					marginBackground="{margin_backgroundColor},"
-					defaultTextColor="{defaultTextColor},"
-					defaultFont="{defaultFont},"
+					marginBackground={margin_backgroundColor}
+					{defaultTextColor}
+					{defaultFont}
 				/>
 			</div>
 
 			<div id="bibleContainer" class="carousel_item">
 				<!--???-->
 				<BibleViewer
-					bibleBackground="{bible_backgroundColor},"
-					defaultTextColor="{defaultTextColor},"
-					defaultFont="{defaultFont},"
+					bibleBackground={bible_backgroundColor}
+					{defaultTextColor}
+					{defaultFont}
+					book={bible_book}
+					chapter={bible_chapter}
 				/>
 			</div>
 
 			{#if interlinearOn}
 				<div id="interlinearContainer" class="carousel_item">
 					<Interlinear
-						interlinearBackground="{bible_backgroundColor},"
-						defaultTextColor="{defaultTextColor},"
-						defaultFont="{defaultFont},"
+						interlinearBackground={bible_backgroundColor}
+						{defaultTextColor}
+						{defaultFont}
 					/>
 				</div>
 			{/if}
