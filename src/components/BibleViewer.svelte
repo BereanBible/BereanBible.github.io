@@ -23,14 +23,14 @@ The Bible component.
     // let data = NASB95[0][0][0][1];
     // console.log("data=", data);
 
-    var jaxon = require("jaxon");
+    // var jaxon = require("jaxon");
 
-    jaxon
-        .factory()
-        .on("parse", "__text", function (err, data) {
-            console.log("Text=", data);
-        })
-        .parse("../data/bibles/NASB95.json");
+    // jaxon
+    //     .factory()
+    //     .on("parse", "__text", function (err, data) {
+    //         console.log("Text=", data);
+    //     })
+    //     .parse("../data/bibles/NASB95.json");
 </script>
 
 <!--HTML-->
